@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --white: #ffffff;
+  --black: #171717;
+  --green: #0a4e32;
+  --orange: #de5c1b;
+  --pink: #e8a4cf;
+  --blush: #eacaba;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,6 +22,46 @@
 
 body {
   color: var(--foreground);
+  background: var(--blush);
+}
+
+li {
+  color: var(--accent-color);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea:hover {
+  cursor: auto;
+}
+
+textarea {
+  width: 100%;
+  border: solid;
+  resize: none;
+  height: 36em;
+  border-color: #ea95ca;
+  font-family: Helvetica, sans-serif;
+}
+
+
+.squeeze,
+textarea {
+  font-size: large;
+  color: var(--white);
+  background: var(--pink);
+  border-radius: 3px;
+}
+
+.makeList {
+  font-size: large;
+  color: var(--pink);
+  background: var(--green);
+  border-radius: 3px;
+}
+
+.collection{
+  font-size: large;
+  color: var(--white);
+  padding-right: 2em;
 }
